@@ -1,0 +1,107 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #1EB0D7;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #525252;
+}
+
+.container {
+	margin: 0 auto;
+	width: 960px;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+}
+
+#header {
+	background: url(../img/logo.png) no-repeat right -11px;
+	background-size: 35%;
+	padding: 0 0 4em 0;
+}
+
+.logo {
+	display: inline-block;
+	padding: 12em 0.25em 2em 0em;
+	text-shadow: 1px 1px 0px #188FB9;
+	text-transform: uppercase;
+}
+
+.logo h1 a {
+	font-weight: 100;
+	color: #FFFFFF;
+	font-size: 2em;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contacts {
+	display: inline-block;
+	padding: 0em 0em 2em 2em;
+}
+
+.contacts ul {
+	list-style: none;
+	color: #FFFFFF;
+}
+
+.a1 {
+	background: url(../img/call-A1.svg) no-repeat;
+	background-size: contain;
+}
+
+.mts {
+	background: url(../img/call-mts.gif) no-repeat;
+	background-size: contain;
+}
+
+.life {
+	background: url(../img/call-life.jpg) no-repeat;
+	background-size: contain;
+}
+
+.contacts ul li {
+	padding-left: 1.5em;
+	margin-bottom: 0.7em;
+	font-size: 1em;
+	color: #294159;
+}
+
+.contacts ul li a {
+	color: #294159;
+}
+
+#nav ul {
+	list-style: none;
+}
+
+#nav li {
+	display: inline-block;
+}
+
+#nav a {
+	margin-right: 0.12em;
+	padding: 1em 1.5em;
+	background: #178EAE;
+	box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.25);
+	text-shadow: 1px 1px 0px #0C749C;
+	text-transform: uppercase;
+	font-size: .8em;
+	color: #FFFFFF;
+}
+
+#nav a:hover {
+	color: brown;
+}
+
+#page-wrapper {
+	margin-bottom: 1em;
+	padding: 4em 0em 3em 0em;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, .1);
+}
