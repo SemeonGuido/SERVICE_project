@@ -1,0 +1,97 @@
+#page-wrapper {
+    margin-bottom: 1em;
+    padding: 2em 0em 1.5em 0em;
+    background: rgb(231, 224, 224);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, .1);
+}
+
+h2.line:before,
+h2.line:after,
+h3.line:before,
+h3.line:after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    vertical-align: middle;
+    background: #188fb9;
+    background-clip: content-box;
+}
+
+h3.line:before,
+h2.line:before {
+    left: -.5em;
+    margin: 0 0 0 -50%;
+}
+
+h3.line:after,
+h2.line:after {
+    left: .5em;
+    margin: 0 -50% 0 0;
+}
+
+h3.line,
+h2.line {
+    overflow: hidden;
+    text-align: center;
+    padding: .2em 0;
+    color: #188fb9;
+}
+
+.tw-icon img {
+    width: 70px;
+}
+
+.tw-content {
+    margin-left: 100px;
+    font-size: 13px;
+}
+
+.tw-content h3 {
+    margin-bottom: 0.8em;
+}
+
+.tw-content li {
+    margin-bottom: 0.5em;
+}
+
+.wrapper-why li {
+    list-style: none;
+}
+
+.wrapper-why .tw-content,
+.wrapper-why .tw-icon {
+    margin-top: 2em;
+}
+
+.img-main {
+    margin-top: 2em;
+    width: 100%;
+}
+
+#scrollUp {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity .5s;
+}
+
+#scrollUp:hover {
+    opacity: 1;
+}
+
+.scrollUp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.scrollUp:nth-child(2) {
+    right: 33px;
+    bottom: 35px;
+}
+
+.scrollUp_off {
+    opacity: 0 !important;
+    transition: opacity .5s;
+}
