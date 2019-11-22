@@ -1,4 +1,4 @@
-console.log('Hello!')
+console.log($(window).scrollTop())
 
 $(document).ready(function () {
 
@@ -6,10 +6,10 @@ $(document).ready(function () {
 
     $(window).on("scroll", function () {
 
-        if ($(window).scrollTop()) {
-            $('#scrollUp').removeClass('scrollUp_off');
+        if (($(window).scrollTop()) > ($('header').height())) {
+            $('#scrollUp').fadeIn();
         } else {
-            $('#scrollUp').addClass('scrollUp_off');
+            $('#scrollUp').fadeOut();
         }
 
     });

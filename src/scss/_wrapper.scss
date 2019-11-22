@@ -73,25 +73,16 @@ h2.line {
 #scrollUp {
     opacity: 0.5;
     cursor: pointer;
-    transition: opacity .5s;
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    right: 20px;
+    bottom: 20px;
+    background:
+        url(../img/icon-up.png) 11px 15px no-repeat,
+        url(../img/btn-scrollup.png) no-repeat;
 }
 
 #scrollUp:hover {
     opacity: 1;
-}
-
-.scrollUp {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-}
-
-.scrollUp:nth-child(2) {
-    right: 33px;
-    bottom: 35px;
-}
-
-.scrollUp_off {
-    opacity: 0 !important;
-    transition: opacity .5s;
 }
