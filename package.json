@@ -2,7 +2,7 @@
   "name": "idf",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Sam Guido",
+  "author": "vladimir kamenkov",
   "license": "ISC",
   "dependencies": {
     "browser-sync": "^2.26.3",

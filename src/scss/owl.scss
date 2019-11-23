@@ -1,7 +1,7 @@
-.item1 {
+.item {
     height: 500px;
     min-width: 960px;
-    background: url(../img/owl2-audi-rs6.jpg) 0% 50% no-repeat;
+    background: url(../img/owl2-audi-rs6.jpg) 50% 50% no-repeat;
     background-size: cover;
 }
 
@@ -14,14 +14,14 @@
     border: none;
     padding: 0 !important;
     font: inherit;
-    font-size: 15em;
+    font-size: 10em;
     /* position: absolute; */
 }
 
 .owl-theme .owl-nav [class*=owl-] {
     /* color: #fff; */
     font-size: 14px;
-    margin: 5px;
+    margin: 0px;
     padding: 4px 7px;
     /* background: #d6d6d6; */
     display: inline-block;
@@ -35,7 +35,7 @@
     text-align: center;
     -webkit-tap-highlight-color: transparent;
     position: absolute;
-    top: -60px;
+    top: 150px;
 }
 
 .owl-theme .owl-nav [class*=owl-]:hover {
@@ -52,10 +52,23 @@
 
 .owl-next {
     position: absolute;
-    right: 10px;
+    right: 1px;
+    opacity: 0.5;
+    transition: color 2s;
 }
 
 .owl-prev {
     position: absolute;
-    left: 10px;
+    left: 1px;
+    opacity: 0.5;
+    transition: color 2s;
 }
+
+.owl-next:hover {
+    transition: color 1s;
+}
+
+.owl-prev:hover {
+    transition: color 1s;
+}
+
