@@ -1,12 +1,20 @@
 #header {
-	background: url(../img/logo.png) no-repeat right -11px;
-	background-size: 35%;
-	padding: 0 0 4em 0;
+	padding: 0 0 1em 0;
+}
+
+.logoImg {
+	visibility: hidden;
+	float: right;
+	height: 250px;
+	width: 250px;
+	background: center / contain no-repeat url(../img/logo.png);
+	background-size: 100%;
 }
 
 .logo {
+	visibility: hidden;
 	display: inline-block;
-	padding: 12em 0.25em 2em 0em;
+	padding: 8em 0.25em 2em 0em;
 	text-shadow: 1px 1px 0px #188FB9;
 }
 
@@ -51,6 +59,7 @@
 }
 
 .contacts ul li {
+	visibility: hidden;
 	padding-left: 1.5em;
 	margin-bottom: 0.7em;
 	font-size: 1em;
@@ -67,6 +76,7 @@
 
 #nav li {
 	display: inline-block;
+	visibility: hidden;
 }
 
 #nav a {
@@ -80,6 +90,10 @@
 	color: #FFFFFF;
 }
 
-#nav a:hover {
-	color: brown;
+.visible {
+	visibility: visible !important;
+}
+
+.da-slider {
+	visibility: hidden;
 }

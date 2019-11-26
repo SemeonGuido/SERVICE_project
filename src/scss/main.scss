@@ -1,70 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+@import "da.style";
+@import "base";
 @import "header";
 @import "wrapper";
 @import "owl.carousel";
 @import "owl.theme.default";
 @import "animate";
 @import "owl";
+@import "magic";
 
-body {
-    background: #1EB0D7;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #525252;
-}
-
-.container {
-    margin: 0 auto;
-    width: 960px;
-}
-
-a,
-a:hover {
-    text-decoration: none;
-    color: rgb(82, 82, 82);
-}
-
-.row {}
-
-.f-left {
-    float: left;
-}
-
-.clearfix:after {
-    content: '';
-    display: block;
-    clear: both;
-    height: 0;
-}
-
-.row:after {
-    content: '';
-    display: block;
-    clear: both;
-    height: 0;
-}
-
-.col100 {
-    width: 100%;
-    padding: 0 2em;
-    margin: 1em 0;
-}
-
-.col33 {
-    float: left;
-    width: 33.333%;
-    padding: 0 2em;
-    margin: 1em 0;
-}
-
-.col50 {
-    overflow: hidden;
-    float: left;
-    width: 50%;
-    padding: 0 2em;
-    margin: 1em 0;
-}

@@ -1,7 +1,21 @@
-.item {
+.item1 {
     height: 500px;
     min-width: 960px;
     background: url(../img/owl2-audi-rs6.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.item2 {
+    height: 500px;
+    min-width: 960px;
+    background: url(../img/owl1-auto-wallpapers.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.item3 {
+    height: 500px;
+    min-width: 960px;
+    background: url(../img/owl3.jpg) 50% 50% no-repeat;
     background-size: cover;
 }
 
@@ -72,3 +86,8 @@
     transition: color 1s;
 }
 
+.item1 span {
+    color: chartreuse;
+    font-size: 1.5em;
+    transition: color 2s;
+}
