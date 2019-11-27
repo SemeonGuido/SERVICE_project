@@ -1,3 +1,7 @@
+$f-color-light: #ffffff;
+$f-color-dark: #404040;
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +9,10 @@
 }
 
 body {
-    background: #8f8e96;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #0E6973;
+    font-family: Economica, Arial, sans-serif;
     color: #525252;
+    font-size: 18px;
 }
 
 .hidden {
@@ -28,8 +33,6 @@ a:hover {
     text-decoration: none;
     color: rgb(82, 82, 82);
 }
-
-.row {}
 
 .f-left {
     float: left;

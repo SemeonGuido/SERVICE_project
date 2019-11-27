@@ -1,20 +1,5 @@
 window.onload = function () {
 
-    // for (let i = 0; i < 5; i++) {
-    //     let testNum = 0;
-    //     testNum++;
-    //     const test = setInterval(function () {
-    //         let it = document.querySelectorAll('.current_p');
-    //         it[i].classList.remove('hidden');
-    //         it[i].classList.add('tinRightIn');
-    //         console.log(i);
-    //         if (++testNum == 5) {
-    //             clearInterval(test);
-    //         }
-    //     }, 200);
-    // }
-
-
     var nav = document.querySelectorAll('.current_p');
     var contacts = document.querySelectorAll('.contacts li');
     var logo = document.querySelector('.logo');

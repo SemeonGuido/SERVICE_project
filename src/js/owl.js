@@ -2,7 +2,7 @@ var owl = $('.owl-carousel');
 owl.owlCarousel({
     animateOut: 'zoomOutDown',
     animateIn: 'zoomInDown',
-    items: 1,
+    items: 7,
     nav: true,
     loop: true,
     touchDrag: true,

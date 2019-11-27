@@ -1,3 +1,7 @@
+$f-color-light: rgb(255, 255, 255);
+$f-color-dark: #404040;
+
+
 #header {
 	padding: 0 0 1em 0;
 }
@@ -14,14 +18,15 @@
 .logo {
 	visibility: hidden;
 	display: inline-block;
-	padding: 8em 0.25em 2em 0em;
+	padding: 4em 0.25em 2em 0em;
 	text-shadow: 1px 1px 0px #188FB9;
 }
 
 .logo h1 a {
 	font-weight: 100;
+	text-decoration: underline;
 	text-transform: uppercase;
-	color: #FFFFFF;
+	color: $f-color-light;
 	font-size: 2em;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -40,7 +45,7 @@
 
 .contacts ul {
 	list-style: none;
-	color: #FFFFFF;
+	color: $f-color-light;
 }
 
 .a1 {
@@ -63,11 +68,16 @@
 	padding-left: 1.5em;
 	margin-bottom: 0.7em;
 	font-size: 1em;
-	color: #294159;
+	color: $f-color-dark;
 }
 
+.contacts ul li,
 .contacts ul li a {
-	color: #294159;
+	color: $f-color-light;
+}
+
+.contacts ul li a:hover {
+	text-shadow: 0 0 29px rgba(254, 206, 26, 0.8);
 }
 
 #nav ul {
@@ -79,6 +89,15 @@
 	visibility: hidden;
 }
 
+#nav li a:hover {
+	box-shadow: 0 0 29px rgba(254, 206, 26, 0.8);
+	color: rgba(254, 206, 26, 0.8);
+}
+
+.logo a:hover {
+	text-shadow: 0 0 29px rgba(254, 206, 26, 0.8);
+}
+
 #nav a {
 	margin-right: 0.12em;
 	padding: 1em 1.5em;
@@ -87,7 +106,7 @@
 	text-shadow: 1px 1px 0px #0C749C;
 	text-transform: uppercase;
 	font-size: .8em;
-	color: #FFFFFF;
+	color: $f-color-light;
 }
 
 .visible {
