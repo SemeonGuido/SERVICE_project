@@ -5,6 +5,7 @@ window.onload = function () {
     var logo = document.querySelector('.logo');
     var logoImg = document.querySelector('.logoImg');
     var dasl = document.querySelector('.da-slider');
+    var wrapper = document.querySelector('#wrapper');
 
     console.log();
 
@@ -30,6 +31,9 @@ window.onload = function () {
     show(logoImg, 'vanishIn');
 
     show(dasl, 'bounceInUp');
+
+    setTimeout(
+        show, 100, wrapper, 'bounceInUp');
 
 
 }

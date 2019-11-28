@@ -1,6 +1,5 @@
-$f-color-light: rgb(255, 255, 255);
+$f-color-light: #ffffff;
 $f-color-dark: #404040;
-
 
 #header {
 	padding: 0 0 1em 0;
@@ -38,6 +37,14 @@ $f-color-dark: #404040;
 	font-family: 'Courier New', Courier, monospace;
 }
 
+.location-ico {
+	background: left / contain no-repeat url(../img/location-ic1.png);
+}
+
+.calendar-ico {
+	background: left / contain no-repeat url(../img/calendar.png);
+}
+
 .contacts {
 	display: inline-block;
 	padding: 0em 0em 2em 2em;
@@ -49,17 +56,17 @@ $f-color-dark: #404040;
 }
 
 .a1 {
-	background: url(../img/call-A1.svg) no-repeat;
+	background: url(../img/call-A1.png) no-repeat;
 	background-size: contain;
 }
 
 .mts {
-	background: url(../img/call-mts.gif) no-repeat;
+	background: url(../img/call-mts.png) no-repeat;
 	background-size: contain;
 }
 
 .life {
-	background: url(../img/call-life.jpg) no-repeat;
+	background: url(../img/call-life.png) no-repeat;
 	background-size: contain;
 }
 
