@@ -6,16 +6,13 @@ $f-color-dark: #404040;
 }
 
 .logoImg {
-	visibility: hidden;
 	float: right;
 	height: 250px;
 	width: 250px;
 	background: center / contain no-repeat url(../img/logo.png);
-	background-size: 100%;
 }
 
 .logo {
-	visibility: hidden;
 	display: inline-block;
 	padding: 4em 0.25em 2em 0em;
 	text-shadow: 1px 1px 0px #188FB9;
@@ -28,6 +25,11 @@ $f-color-dark: #404040;
 	color: $f-color-light;
 	font-size: 2em;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+	&:hover {
+		text-shadow: 0 0 29px rgba(254, 206, 26, 0.8);
+
+	}
 }
 
 .logo span {
@@ -71,7 +73,6 @@ $f-color-dark: #404040;
 }
 
 .contacts ul li {
-	visibility: hidden;
 	padding-left: 1.5em;
 	margin-bottom: 0.7em;
 	font-size: 1em;
@@ -81,31 +82,27 @@ $f-color-dark: #404040;
 .contacts ul li,
 .contacts ul li a {
 	color: $f-color-light;
+
+	&:hover {
+		text-shadow: 0 0 29px rgba(254, 206, 26, 0.8);
+
+	}
 }
 
-.contacts ul li a:hover {
-	text-shadow: 0 0 29px rgba(254, 206, 26, 0.8);
-}
-
-#nav ul {
+nav ul {
 	list-style: none;
 }
 
-#nav li {
+nav li {
 	display: inline-block;
-	visibility: hidden;
 }
 
-#nav li a:hover {
+nav li a:hover {
 	box-shadow: 0 0 29px rgba(254, 206, 26, 0.8);
 	color: rgba(254, 206, 26, 0.8);
 }
 
-.logo a:hover {
-	text-shadow: 0 0 29px rgba(254, 206, 26, 0.8);
-}
-
-#nav a {
+nav a {
 	margin-right: 0.12em;
 	padding: 1em 1.5em;
 	background: #178EAE;
@@ -120,6 +117,104 @@ $f-color-dark: #404040;
 	visibility: visible !important;
 }
 
+.none {
+	display: none;
+}
+
 .da-slider {
 	visibility: hidden;
+}
+
+.logo-min {
+	display: inline-block;
+	padding: 0em 0.25em 0em 0em;
+	text-shadow: 1px 1px 0px #188FB9;
+}
+
+.logo-min h1 a {
+	font-weight: 100;
+	text-decoration: underline;
+	text-transform: uppercase;
+	color: $f-color-light;
+	font-size: 1em;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+	&:hover {
+		text-shadow: 0 0 29px rgba(254, 206, 26, 0.8);
+
+	}
+}
+
+.logo-min span {
+	color: #cecaca;
+	font-size: .75em;
+	letter-spacing: .46em;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.header-min {
+	display: none;
+	background: rgba(42, 48, 60, .8);;
+	z-index: 10;
+	position: fixed;
+	right: 0;
+	left: 0;
+}
+
+.header-min .contacts {
+	padding: 0em 0em 1em 2em;
+}
+
+.header-min .contacts ul li {
+	padding-left: 1.5em;
+	margin-bottom: 0.3em;
+	font-size: .75em;
+}
+
+.header-min .contacts ul {
+	display: inline-block;
+
+	&:nth-of-type(2) {
+		margin-left: 1em;
+	}
+}
+
+.header-min .logoImg {
+	float: right;
+	height: 135px;
+	width: 250px;
+	background: center/contain no-repeat url(../img/logo.png);
+}
+
+.header-min nav a {
+	margin-right: 0.12em;
+	padding: .75em 1.5em;
+	background: #178EAE;
+	box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.25);
+	text-shadow: 1px 1px 0px #0C749C;
+	text-transform: uppercase;
+	font-size: .8em;
+	color: $f-color-light;
+}
+
+.header-mobile {
+	background: #2a303c;
+	transform: translateX(-100%);
+	transition: transform 500ms ease-in-out;
+	position: fixed;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	z-index: 15;
+}
+
+.header-mobile-slide {
+	transform: translateX(0);
+}
+
+#hamburger-11 {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	z-index: 20;
 }

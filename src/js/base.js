@@ -1,13 +1,22 @@
+var headerChilds = document.querySelector('#header');
+headerChilds.style.visibility = 'hidden';
+
+
 window.onload = function () {
 
-    var nav = document.querySelectorAll('.current_p');
-    var contacts = document.querySelectorAll('.contacts li');
-    var logo = document.querySelector('.logo');
-    var logoImg = document.querySelector('.logoImg');
+    var nav = document.querySelectorAll('#header .page');
+    var contacts = document.querySelectorAll('#header .contacts li');
+    var logo = document.querySelector('#logo');
+    var logoImg = document.querySelector('#logoImg');
     var dasl = document.querySelector('.da-slider');
     var wrapper = document.querySelector('#wrapper');
+    var headerHeight = document.querySelector('#header').offsetHeight
+    var headerMin = document.querySelector('.header-min');
+    var hamburger = document.querySelector('.hamburger');
+    var headerMobile = document.querySelector('.header-mobile');
 
-    console.log();
+
+    console.log(document.querySelector('body'));
 
     function show(elem, animate) {
         // elem.classList.add('tinRightIn', 'magictime');
@@ -34,6 +43,36 @@ window.onload = function () {
 
     setTimeout(
         show, 100, wrapper, 'bounceInUp');
+
+    // Show little header
+
+    function showHide() {
+        if (window.pageYOffset >= headerHeight) {
+            headerMin.classList.remove('slideUp', 'animated');
+            headerMin.style.display = 'block';
+            headerMin.classList.add('slideUpReturn', 'animated');
+        } else {
+            headerMin.classList.remove('slideUpReturn', 'animated');
+            headerMin.classList.add('slideUp', 'animated');
+        };
+    }
+
+    showHide();
+
+    window.addEventListener('scroll', function () {
+        showHide();
+    })
+
+    // Hamburger menu
+
+    hamburger.addEventListener('click', function () {
+        this.classList.toggle("is-active");
+        headerMobile.classList.toggle('header-mobile-slide');
+        document.querySelector('.body').classList.toggle('bodySlide');
+        document.body.classList.toggle('overflow');
+        document.querySelector('.cover').classList.toggle('none');
+    })
+
 
 
 }
