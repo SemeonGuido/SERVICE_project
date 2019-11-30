@@ -6,6 +6,7 @@ $f-color-dark: #404040;
 }
 
 .logoImg {
+	margin: 1.5em 0;
 	float: right;
 	height: 250px;
 	width: 250px;
@@ -154,11 +155,19 @@ nav a {
 
 .header-min {
 	display: none;
-	background: rgba(42, 48, 60, .8);;
+	background: rgba(42, 48, 60, .8);
+	;
 	z-index: 10;
 	position: fixed;
 	right: 0;
 	left: 0;
+
+	.logoImg {
+		margin: .5em 0;
+		height: 110px;
+		float: right;
+		background: center/contain no-repeat url(../img/logo.png);
+	}
 }
 
 .header-min .contacts {
@@ -177,13 +186,6 @@ nav a {
 	&:nth-of-type(2) {
 		margin-left: 1em;
 	}
-}
-
-.header-min .logoImg {
-	float: right;
-	height: 135px;
-	width: 250px;
-	background: center/contain no-repeat url(../img/logo.png);
 }
 
 .header-min nav a {
