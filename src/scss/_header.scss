@@ -6,16 +6,16 @@ $f-color-dark: #404040;
 }
 
 .logoImg {
-	margin: 1.5em 0;
+	margin: 1em 0;
 	float: right;
-	height: 250px;
-	width: 250px;
-	background: center / contain no-repeat url(../img/logo.png);
+	height: 210px;
+	width: 210px;
+	background: center/contain no-repeat url(../img/logo.png);
 }
 
 .logo {
 	display: inline-block;
-	padding: 4em 0.25em 2em 0em;
+	padding: 1em .25em 1.5em 0;
 	text-shadow: 1px 1px 0px #188FB9;
 }
 
@@ -50,7 +50,7 @@ $f-color-dark: #404040;
 
 .contacts {
 	display: inline-block;
-	padding: 0em 0em 2em 2em;
+	padding: .5em 0 1em 2em;
 }
 
 .contacts ul {
@@ -92,6 +92,7 @@ $f-color-dark: #404040;
 
 nav ul {
 	list-style: none;
+	display: inline;
 }
 
 nav li {
@@ -124,6 +125,7 @@ nav a {
 
 .da-slider {
 	visibility: hidden;
+	margin: 15px auto;
 }
 
 .logo-min {
@@ -215,6 +217,7 @@ nav a {
 }
 
 #hamburger-11 {
+	display: none;
 	position: absolute;
 	top: 20px;
 	left: 20px;

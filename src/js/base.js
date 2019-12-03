@@ -12,7 +12,7 @@ window.onload = function () {
     var wrapper = document.querySelector('#wrapper');
     var headerHeight = document.querySelector('#header').offsetHeight
     var headerMin = document.querySelector('.header-min');
-    var hamburger = document.querySelector('.hamburger');
+    var hamburger = document.querySelector('#hamburger-11');
     var headerMobile = document.querySelector('.header-mobile');
 
 
@@ -48,12 +48,12 @@ window.onload = function () {
 
     function showHide() {
         if (window.pageYOffset >= headerHeight) {
-            headerMin.classList.remove('slideUp', 'animated');
+            headerMin.classList.remove('slideUp');
             headerMin.style.display = 'block';
-            headerMin.classList.add('slideUpReturn', 'animated');
+            headerMin.classList.add('slideUpReturn');
         } else {
-            headerMin.classList.remove('slideUpReturn', 'animated');
-            headerMin.classList.add('slideUp', 'animated');
+            headerMin.classList.remove('slideUpReturn');
+            headerMin.classList.add('slideUp');
         };
     }
 
