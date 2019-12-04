@@ -1,6 +1,7 @@
 var headerChilds = document.querySelector('#header');
 headerChilds.style.visibility = 'hidden';
-
+// var button = document.querySelector('#nav');
+// button.style.visibility = 'hidden';
 
 window.onload = function () {
 

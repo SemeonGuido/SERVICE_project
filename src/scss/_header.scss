@@ -1,15 +1,11 @@
 $f-color-light: #ffffff;
 $f-color-dark: #404040;
 
-#header {
-	padding: 0 0 1em 0;
-}
-
 .logoImg {
-	margin: 1em 0;
+	margin: .5em 0;
 	float: right;
-	height: 210px;
-	width: 210px;
+	height: 200px;
+	width: 165px;
 	background: center/contain no-repeat url(../img/logo.png);
 }
 
@@ -68,51 +64,42 @@ $f-color-dark: #404040;
 	background-size: contain;
 }
 
-.life {
-	background: url(../img/call-life.png) no-repeat;
-	background-size: contain;
-}
-
 .contacts ul li {
 	padding-left: 1.5em;
-	margin-bottom: 0.7em;
+	margin-bottom: 0.5em;
 	font-size: 1em;
-	color: $f-color-dark;
-}
-
-.contacts ul li,
-.contacts ul li a {
 	color: $f-color-light;
 
-	&:hover {
-		text-shadow: 0 0 29px rgba(254, 206, 26, 0.8);
+	a {
+		color: $f-color-light;
 
+		&:hover {
+			text-shadow: 0 0 29px rgba(254, 206, 26, 0.8);
+
+		}
 	}
+}
+
+#nav {
+	visibility: hidden;
 }
 
 nav ul {
 	list-style: none;
 	display: inline;
-}
 
-nav li {
-	display: inline-block;
-}
+	li {
+		display: inline-block;
+		margin-right: .7em;
 
-nav li a:hover {
-	box-shadow: 0 0 29px rgba(254, 206, 26, 0.8);
-	color: rgba(254, 206, 26, 0.8);
-}
-
-nav a {
-	margin-right: 0.12em;
-	padding: 1em 1.5em;
-	background: #178EAE;
-	box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.25);
-	text-shadow: 1px 1px 0px #0C749C;
-	text-transform: uppercase;
-	font-size: .8em;
-	color: $f-color-light;
+		a {
+			margin-right: 0.12em;
+			padding: 1em 1.5em;
+			text-transform: uppercase;
+			font-size: .8em;
+			color: $f-color-light;
+		}
+	}
 }
 
 .visible {
@@ -130,8 +117,9 @@ nav a {
 
 .logo-min {
 	display: inline-block;
-	padding: 0em 0.25em 0em 0em;
+	padding: .5em .25em 0 0;
 	text-shadow: 1px 1px 0px #188FB9;
+	line-height: 1.3em;
 }
 
 .logo-min h1 a {
@@ -141,11 +129,6 @@ nav a {
 	color: $f-color-light;
 	font-size: 1em;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
-	&:hover {
-		text-shadow: 0 0 29px rgba(254, 206, 26, 0.8);
-
-	}
 }
 
 .logo-min span {
@@ -158,47 +141,50 @@ nav a {
 .header-min {
 	display: none;
 	background: rgba(42, 48, 60, .8);
-	;
 	z-index: 10;
 	position: fixed;
 	right: 0;
 	left: 0;
 
 	.logoImg {
+		position: relative;
 		margin: .5em 0;
-		height: 110px;
+		height: 85px;
+		width: 85px;
 		float: right;
 		background: center/contain no-repeat url(../img/logo.png);
 	}
-}
 
-.header-min .contacts {
-	padding: 0em 0em 1em 2em;
-}
-
-.header-min .contacts ul li {
-	padding-left: 1.5em;
-	margin-bottom: 0.3em;
-	font-size: .75em;
-}
-
-.header-min .contacts ul {
-	display: inline-block;
-
-	&:nth-of-type(2) {
-		margin-left: 1em;
+	nav a {
+		margin-right: 0.12em;
+		padding: .5em .5em;
+		text-transform: uppercase;
+		font-size: .8em;
+		color: $f-color-light;
 	}
-}
 
-.header-min nav a {
-	margin-right: 0.12em;
-	padding: .75em 1.5em;
-	background: #178EAE;
-	box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.25);
-	text-shadow: 1px 1px 0px #0C749C;
-	text-transform: uppercase;
-	font-size: .8em;
-	color: $f-color-light;
+	.contacts {
+		padding: 0 0 .5em 2em;
+		vertical-align: text-bottom;
+		vertical-align: bottom;
+
+		ul {
+			display: inline-block;
+
+			&:nth-of-type(2) {
+				margin-left: 1em;
+			}
+
+			li {
+				padding-left: 1.5em;
+				margin-bottom: 0.3em;
+				font-size: .75em;
+			}
+		}
+
+
+	}
+
 }
 
 .header-mobile {
@@ -216,10 +202,50 @@ nav a {
 	transform: translateX(0);
 }
 
+.hamburger .line {
+	width: 40px;
+	height: 4px;
+	background-color: #ecf0f1;
+	display: block;
+	margin: 7px auto;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
 #hamburger-11 {
+	position: fixed;
 	display: none;
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	z-index: 20;
+	padding: 8px;
+	border-radius: 10px;
+	background: #6b6b6c;
+	top: 9px;
+	left: 9px;
+}
+
+#hamburger-11.is-active .line:nth-child(3) {
+	-webkit-transform: translateY(-11px) rotate(-45deg);
+	transform: translateY(-11px) rotate(-45deg);
+}
+
+#hamburger-11.is-active .line:nth-child(1) {
+	-webkit-transform: translateY(11px) rotate(45deg);
+	transform: translateY(11px) rotate(45deg);
+}
+
+#nav-mobile {
+	margin-top: 5em;
+
+	.button {
+		display: block;
+		font-size: 1.5em;
+		margin: 1em .5em;
+		border: none;
+		background: transparent;
+		color: $f-color-light;
+		outline: 0;
+
+		&:active {
+			color: rgb(175, 170, 170);
+		}
+	}
 }

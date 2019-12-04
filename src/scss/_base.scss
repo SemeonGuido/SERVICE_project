@@ -106,23 +106,15 @@ a:hover {
         max-width: 95%;
     }
 
-    .contacts {
-        display: inline-block;
-        padding: .5em 0 1em 1em;
-    }
-
     .logoImg {
+        position: absolute;
         margin: .5em 0;
-        height: 160px;
-        width: 160px;
+        right: -0;
+        top: 0;
     }
 
     .da-slider {
         margin: 15px auto;
-    }
-
-    .header-min nav a {
-        padding: .5em;
     }
 
     #wrapper .col33 {
@@ -163,17 +155,20 @@ a:hover {
             margin: .5em 0;
         }
     }
+
+    .da-slide h2 {
+        font-size: 29px;
+    }
+
+    .da-slide p {
+        height: 155px;
+    }
 }
 
 @media (max-width: 767px) {
 
     body {
         font-size: 22px;
-    }
-
-    #header {
-        padding: 0 0 1em 0;
-        height: 70px;
     }
 
     #header .container,
@@ -189,6 +184,7 @@ a:hover {
         background: #6b6b6c;
         top: 9px;
         left: 9px;
+        z-index: 20;
     }
 
     .container {
@@ -216,7 +212,14 @@ a:hover {
         padding: 0;
     }
 
-    #wrapper .col33,
+    #wrapper .col33 {
+        overflow: hidden;
+        float: none;
+        width: 395px;
+        padding: 0;
+        margin: 1em auto;
+    }
+
     #wrapper .col50 {
         overflow: hidden;
         float: left;
@@ -249,6 +252,15 @@ a:hover {
         }
     }
 
+    .da-slide h2 {
+        font-size: 29px;
+        width: 90%;
+    }
+
+    .da-slide p {
+        height: 155px;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -275,6 +287,7 @@ a:hover {
         background: #6b6b6c;
         top: 9px;
         left: 9px;
+        z-index: 20;
     }
 
     .container {
@@ -324,6 +337,7 @@ a:hover {
 
         &:nth-of-type(1) {
             width: 85%;
+            text-align: center;
         }
 
         &:nth-of-type(2) {
@@ -341,4 +355,15 @@ a:hover {
     .da-slider {
         min-width: 375px;
     }
+
+    .da-slide h2 {
+        font-size: 24px;
+        width: 90%;
+    }
+
+    .da-slide p {
+        height: 253px;
+        font-size: 15px;
+    }
+
 }
