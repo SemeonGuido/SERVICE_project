@@ -20,7 +20,7 @@ body {
 }
 
 .bodySlide {
-    transform: translateX(50%);
+    transform: translateX(70%);
 }
 
 .overflow {
@@ -114,7 +114,7 @@ a:hover {
     }
 
     .da-slider {
-        margin: 15px auto;
+        margin: 1em auto;
     }
 
     #wrapper .col33 {
@@ -201,7 +201,7 @@ a:hover {
     }
 
     .da-slider {
-        margin: 15px auto;
+        margin: 1em auto;
     }
 
     .header-min nav a {
@@ -261,6 +261,37 @@ a:hover {
         height: 155px;
     }
 
+    .location-ico {
+        background: left / 25px no-repeat url(../img/location-ic1.png);
+    }
+
+    .calendar-ico {
+        background: left / 25px no-repeat url(../img/calendar.png);
+    }
+
+    h2.line:before,
+    h3.line:before {
+        left: 0;
+        margin: 0;
+    }
+
+    h2.line:after,
+    h3.line:after {
+        left: 0;
+        margin: 0;
+    }
+
+    h2.line:after,
+    h2.line:before,
+    h3.line:after,
+    h3.line:before {
+        width: 90%;
+    }
+
+    .text-wth {
+        width: 90%;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -304,7 +335,7 @@ a:hover {
     }
 
     .da-slider {
-        margin: 15px auto;
+        margin: 1em auto;
     }
 
     .header-min nav a {
@@ -365,5 +396,12 @@ a:hover {
         height: 253px;
         font-size: 15px;
     }
+}
 
+.contact ul li {
+    list-style: none;
+    padding-left: 2em;
+    margin: .5em 1.5em;
+    font-size: 1em;
+    color: rgb(99, 98, 98);
 }

@@ -1,6 +1,10 @@
 $f-color-light: #ffffff;
 $f-color-dark: #404040;
 
+#header {
+	margin: 0 0 1em 0;
+}
+
 .logoImg {
 	margin: .5em 0;
 	float: right;
@@ -37,11 +41,11 @@ $f-color-dark: #404040;
 }
 
 .location-ico {
-	background: left / contain no-repeat url(../img/location-ic1.png);
+	background: left / 20px no-repeat url(../img/location-ic1.png);
 }
 
 .calendar-ico {
-	background: left / contain no-repeat url(../img/calendar.png);
+	background: left / 20px no-repeat url(../img/calendar.png);
 }
 
 .contacts {
@@ -90,7 +94,6 @@ nav ul {
 
 	li {
 		display: inline-block;
-		margin-right: .7em;
 
 		a {
 			margin-right: 0.12em;
@@ -112,7 +115,7 @@ nav ul {
 
 .da-slider {
 	visibility: hidden;
-	margin: 15px auto;
+	margin: 1em auto;
 }
 
 .logo-min {
@@ -192,7 +195,7 @@ nav ul {
 	transform: translateX(-100%);
 	transition: transform 500ms ease-in-out;
 	position: fixed;
-	width: 50%;
+	width: 70vw;
 	height: 100%;
 	top: 0;
 	z-index: 15;
@@ -237,7 +240,7 @@ nav ul {
 
 	.button {
 		display: block;
-		font-size: 1.5em;
+		font-size: 1em;
 		margin: 1em .5em;
 		border: none;
 		background: transparent;
@@ -248,4 +251,30 @@ nav ul {
 			color: rgb(175, 170, 170);
 		}
 	}
+}
+
+.page {
+	position: relative;
+}
+
+.parts {
+	position: absolute;
+	background: #2a303c;
+	width: 186px;
+	border: 1px solid #fff;
+	top: 53px;
+	right: 0px;
+	z-index: 100;
+
+	// li {
+	// 	list-style: none;
+	// 	padding: .2em;
+
+	// 	a {
+	// 		color: #fdfefe;
+	// 		font-size: .8em;
+
+	// 		&:hover {}
+	// 	}
+	// }
 }

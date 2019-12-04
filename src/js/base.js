@@ -1,7 +1,5 @@
 var headerChilds = document.querySelector('#header');
 headerChilds.style.visibility = 'hidden';
-// var button = document.querySelector('#nav');
-// button.style.visibility = 'hidden';
 
 window.onload = function () {
 
@@ -9,15 +7,13 @@ window.onload = function () {
     var contacts = document.querySelectorAll('#header .contacts li');
     var logo = document.querySelector('#logo');
     var logoImg = document.querySelector('#logoImg');
-    var dasl = document.querySelector('.da-slider');
+    var daSlider = document.querySelector('.da-slider');
     var wrapper = document.querySelector('#wrapper');
     var headerHeight = document.querySelector('#header').offsetHeight
     var headerMin = document.querySelector('.header-min');
     var hamburger = document.querySelector('#hamburger-11');
     var headerMobile = document.querySelector('.header-mobile');
 
-
-    console.log(document.querySelector('body'));
 
     function show(elem, animate) {
         // elem.classList.add('tinRightIn', 'magictime');
@@ -27,20 +23,20 @@ window.onload = function () {
     show(logo, 'bounceInRight');
 
     for (var i = 0; i < nav.length; i++) {
-        var element = nav[i];
+        element = nav[i];
         setTimeout(
             show, i * 100, nav[i], 'bounceInRight');
     }
 
     for (var i = 0; i < contacts.length; i++) {
-        var element = contacts[i];
+        element = contacts[i];
         setTimeout(
             show, i * 100, contacts[i], 'bounceInRight');
     }
 
     show(logoImg, 'vanishIn');
 
-    show(dasl, 'bounceInUp');
+    show(daSlider, 'bounceInUp');
 
     setTimeout(
         show, 100, wrapper, 'bounceInUp');
